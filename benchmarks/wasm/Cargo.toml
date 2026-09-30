@@ -1,0 +1,15 @@
+[package]
+name = "wasm-mobilenet-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasi-nn = "0.6.0"
+image = { version = "0.24.7", default-features = false, features = ["jpeg", "png"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
