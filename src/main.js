@@ -4,7 +4,7 @@ import { exportToCSV } from './data/csvParser.js';
 import { Router } from './router.js';
 
 // Component imports
-import { renderNavbar } from './components/Navbar.js';
+import { renderSidebar } from './components/Sidebar.js';
 import { renderHeader } from './components/Header.js';
 import { renderPipeline } from './components/Pipeline.js';
 import { renderConfigMatrix } from './components/ConfigMatrix.js';
@@ -60,8 +60,8 @@ function renderActivePage(route) {
   // Clean previous chart instances to prevent memory leaks
   chartManager.destroyAll();
 
-  // Render Navbar
-  renderNavbar('navbar-root', store, route, (target) => router.setRoute(target), handleOpenUpload);
+  // Render Left Sidebar Navigation
+  renderSidebar('sidebar-root', store, route, (target) => router.setRoute(target), handleOpenUpload, handleExportCsv);
 
   if (route === 'overview') {
     content.innerHTML = `

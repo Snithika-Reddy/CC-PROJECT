@@ -16,13 +16,15 @@
   <link rel="stylesheet" href="/src/styles/animations.css" />
 </head>
 <body>
-  <!-- Global Sticky Navigation Bar -->
-  <div id="navbar-root"></div>
+  <div class="app-layout">
+    <!-- Left Sidebar Multi-Page Navigation -->
+    <aside id="sidebar-root" class="research-sidebar"></aside>
 
-  <!-- Dynamic Multi-Page Content Area -->
-  <div class="app-container" id="page-container">
-    <main id="page-content" class="fade-in"></main>
-    <div id="footer-root"></div>
+    <!-- Main Viewport Content Area -->
+    <div class="main-viewport" id="page-container">
+      <main id="page-content" class="fade-in"></main>
+      <div id="footer-root"></div>
+    </div>
   </div>
 
   <!-- CSV Import Modal Root -->

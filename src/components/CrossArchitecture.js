@@ -82,7 +82,7 @@ export function renderCrossArchitecture(containerId, store, chartManager) {
         </div>
       </div>
 
-      <div class="chart-container-wrapper" style="height: 380px; margin-top: 0.5rem;">
+      <div class="chart-container-wrapper" style="height: 275px; margin-top: 0.5rem;">
         <canvas id="chart-cross-arch"></canvas>
       </div>
 

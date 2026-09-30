@@ -28,7 +28,7 @@ export function renderResourceUtilization(containerId, store, chartManager) {
         </div>
       </div>
 
-      <div class="chart-container-wrapper" style="height: 380px;">
+      <div class="chart-container-wrapper" style="height: 275px;">
         <canvas id="chart-resource-utilization"></canvas>
       </div>
 

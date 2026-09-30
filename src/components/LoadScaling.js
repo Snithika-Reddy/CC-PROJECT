@@ -39,7 +39,7 @@ export function renderLoadScaling(containerId, store, chartManager) {
         </div>
       </div>
 
-      <div class="chart-container-wrapper" style="height: 420px;">
+      <div class="chart-container-wrapper" style="height: 280px;">
         <canvas id="chart-load-scaling"></canvas>
       </div>
 
